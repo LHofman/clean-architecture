@@ -88,4 +88,8 @@ return static function (RouteBuilder $routes) {
      * });
      * ```
      */
+
+    $routes->prefix('ToDo', ['path' => '/toDo'], function (RouteBuilder $builder) {
+        $builder->fallbacks();
+    });
 };
